@@ -1,0 +1,20 @@
+# Automatically normalize line endings
+* text=auto
+# Markdown
+*.md linguist-detectable=true
+*.md linguist-documentation=false
+# Serialisation
+*.json  text linguist-detectable=true
+*.toml  text linguist-detectable=true
+*.xml   text linguist-detectable=true
+*.yaml  text linguist-detectable=true
+*.yml   text linguist-detectable=true
+# Bash scripts will always use LF line endings
+*.sh text eol=lf
+# Documents
+*.pptx filter=lfs diff=lfs merge=lfs -text
+*.pdf  filter=lfs diff=lfs merge=lfs -text
+# Images
+*.png  filter=lfs diff=lfs merge=lfs -text
+*.jpg  filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text

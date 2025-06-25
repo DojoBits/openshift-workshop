@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: animation-app
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: animation-app
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: src/argo-app-deployment/animation-app
+    repoURL: https://github.com/DojoBits/openshift-workshop
+    targetRevision: main
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: false
+    syncOptions:
+    - CreateNamespace=true

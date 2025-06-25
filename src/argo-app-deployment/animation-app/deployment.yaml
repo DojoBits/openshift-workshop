@@ -1,0 +1,25 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: animation-app
+  name: animation-app
+  namespace: animation-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: animation-app
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: animation-app
+    spec:
+      containers:
+      - image: quay.io/rhdevelopers/bgd:1.0.0
+        name: animation-app
+        env:
+        - name: COLOR
+          value: "blue"
