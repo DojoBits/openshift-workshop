@@ -4,11 +4,9 @@
 *#
 *.bak
 *.swp
-*.pdf
 *.eot
 *.ttf
 *.woff
-*.html
 *.zip
 **/temp/**
 **/todo.md

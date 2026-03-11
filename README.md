@@ -11,6 +11,10 @@ Delivered by **DojoBits**
 
 </div>
 
+🔗 **Workshop Repository** [https://github.com/DojoBits/openshift-workshop](https://github.com/DojoBits/openshift-workshop)
+
+---
+
 # 👋 Welcome
 
 An enterprise hands-on workshop focused on operating applications on **Red Hat
@@ -60,7 +64,7 @@ The workshop includes several hands-on exercises demonstrating GitOps workflows
 on **Red Hat OpenShift**.
 
 Participants can follow the full step-by-step instructions in the
-**`workshop-guide`** directory.
+[workshop-guide](https://github.com/DojoBits/openshift-workshop/tree/main/workshop-guide) directory.
 
 ## 🏢 About DojoBits
 
